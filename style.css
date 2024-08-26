@@ -1,0 +1,104 @@
+:root {
+  --color-red: #C80036;
+  --color-salmao: #FF6969;
+  --color-areia: #FFF5E1;
+  --color-blue: #0C1844;
+  
+  --border-radius: 15px;
+}
+
+*, ::after, ::before {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-areia);
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--color-blue);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--color-blue);
+  border-radius: var(--border-radius);
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  background-color: var(--color-salmao);
+}
+
+label {
+  color: var(--color-blue);
+}
+
+#character-id {
+  width: 50%;
+  height: 30px;
+  background-color: var(--color-areia);
+  text-align: center;
+  border: 2px solid var(--color-red);
+  border-radius: var(--border-radius);
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  background-color: var(--color-red);
+  color: var(--color-areia);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-blue);
+  cursor: pointer;
+}
+
+.card {
+  width: 400px;
+  padding: 20px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  background-color: var(--color-red);
+  color: var(--color-areia);
+  border: 2px solid var(--color-blue);
+  border-radius: var(--border-radius);
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 10px 20px var(--color-blue);
+}
+
+.card img.character-img{
+  width: 90%;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+}
+
+.card h2.character-name {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hidden {
+  display: none;
+}
